@@ -9,7 +9,7 @@
 }
 
 .headings > h1 {
-  color: #03203c;
+  color: #06335d;
   font-size: 3.6rem;
   text-align: center;
 }
@@ -22,17 +22,17 @@
 
 .btn {
   background-color: white;
-  color: #03203c;
+  color: #06335d;
   padding: 14px 24px;
   font-size: 18px;
   font-weight: bold;
-  border: 2px solid #03203c;
+  border: 2px solid #06335d;
   cursor: pointer;
   box-shadow: #c7c11a 0px 7px 12px 1px;
 }
 
 .btn:hover {
-  background-color: #03203c;
+  background-color: #06335d;
   color: white;
   box-shadow: none;
 }
@@ -50,7 +50,7 @@
   position: inherit;
   bottom: -16px;
   left: 2px;
-  color: #03203c;
+  color: #06335d;
   text-decoration: underline;
 }
 
