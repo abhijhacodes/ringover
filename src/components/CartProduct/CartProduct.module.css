@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  height: 110px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.imageBox {
+  height: 110px;
+  width: 140px;
+  background-color: rgba(234, 234, 234, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 3px;
+  left: -2px;
+  cursor: pointer;
+}
+
+.details,
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.details {
+  height: 100%;
+  width: 50%;
+  gap: 1rem;
+}
+
+.smallText {
+  font-size: small;
+}

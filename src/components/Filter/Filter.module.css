@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 28px;
+  gap: 1.8rem;
+}
+
+.filterTop {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.filterTop > text {
+  font-size: x-large;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.filterContainer > text,
+.colorContainer > text {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.selector {
+  margin-top: 7px;
+}
+
+.selector > input {
+  margin-right: 12px;
+}
+
+.colorContainer,
+.colorBoxContainer {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.colorContainer {
+  flex-direction: column;
+}
+
+.colorBoxContainer {
+  gap: 1rem;
+  margin-top: 10px;
+}
+
+.colorBox {
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+}
+
+.filterBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.btn1 {
+  background-color: rgb(13, 12, 12);
+  color: white;
+  padding: 6px 12px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.btn2 {
+  background-color: white;
+  padding: 6px 12px;
+  cursor: pointer;
+  border: 1px solid rgb(13, 12, 12);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .filterContainer {
+    flex-direction: row;
+    gap: 1.2rem;
+  }
+  .container {
+    margin-top: 38px;
+  }
+}

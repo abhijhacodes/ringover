@@ -1,0 +1,84 @@
+.navContainer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 92px;
+  background-color: rgba(221, 221, 192, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.logoContainer,
+.linksContainer,
+.profile {
+  display: flex;
+  flex: 0.2;
+  align-items: center;
+  justify-content: center;
+}
+
+.navLink {
+  cursor: pointer;
+  padding-bottom: 3px;
+}
+
+.logo,
+.profile {
+  cursor: pointer;
+}
+
+.logoContainer,
+.profile {
+  flex: 0.2;
+}
+
+.linksContainer {
+  flex: 0.6;
+  gap: 2.2rem;
+}
+
+.profile {
+  gap: 0.8rem;
+}
+
+.underline {
+  position: relative;
+  z-index: 1;
+}
+
+.underline:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 75%;
+  border-bottom: 2.5px solid rgb(41, 39, 39);
+}
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  .navContainer {
+    justify-content: center;
+  }
+  .logoContainer,
+  .profile {
+    display: none;
+    width: 0;
+  }
+  .linksContainer {
+    width: 100vw;
+    gap: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .navContainer {
+    background-color: white;
+  }
+  .navText {
+    font-size: medium;
+  }
+}

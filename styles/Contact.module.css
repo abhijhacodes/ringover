@@ -1,0 +1,65 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  gap: 2rem;
+  margin-top: 60px;
+  background-color: #f7f7f7;
+}
+
+.contactCard {
+  display: flex;
+  flex-direction: column;
+  height: 434px;
+  width: 360px;
+  max-width: 90vw;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
+
+.emailContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+.contactHead {
+  font-size: x-large;
+  font-weight: 550;
+}
+.email {
+  font-size: larger;
+  font-weight: 550;
+}
+
+.description {
+  font-size: smaller;
+}
+
+.socialsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  font-size: medium;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.socialLogo {
+  cursor: pointer;
+  border-radius: 50%;
+}

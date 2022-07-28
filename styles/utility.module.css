@@ -1,0 +1,19 @@
+.containerWithBg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.containerWithBg::before {
+  content: "";
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/assets/contactbg.png");
+  background-size: cover;
+  background-position: top center;
+}

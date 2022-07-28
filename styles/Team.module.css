@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.teamList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  gap: 4em;
+  width: 100vw;
+}
+
+.content {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.description {
+  font-size: x-large;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .description {
+    font-size: medium;
+  }
+  .container {
+    margin-top: 28px;
+    margin-bottom: 28px;
+    height: fit-content;
+  }
+  .content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 859px) {
+  .description {
+    font-size: large;
+  }
+  .container {
+    margin-top: 28px;
+    margin-bottom: 28px;
+    height: fit-content;
+  }
+  .content {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container::before {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/assets/contactbg.png");
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+@media screen and (min-width: 860px) and (max-width: 1200px) {
+  .content {
+    flex-direction: column;
+    gap: 0;
+  }
+}

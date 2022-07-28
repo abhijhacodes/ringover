@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.selectorBox {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.labelBox {
+  width: 88px;
+}
+
+.colorGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}

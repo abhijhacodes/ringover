@@ -1,0 +1,171 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.previewTop {
+  flex: 0.08;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 16px 0 0 24px;
+}
+
+.backButton {
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.backButton > text {
+  font-size: x-large;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.previewMain {
+  flex: 0.75;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.previewLeft {
+  background-color: rgba(234, 234, 234, 0.6);
+  height: 100%;
+  width: 44%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.previewRight {
+  height: 100%;
+  width: 44%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.imageBox {
+  height: 110px;
+  width: 140px;
+  background-color: rgba(234, 234, 234, 0.6);
+}
+
+.imageGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.tweaks {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 28px;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.previewBottom {
+  flex: 0.17;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.rating {
+  margin: 10px 0 0 56px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sizeBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 240px;
+  gap: 0.8rem;
+}
+
+.sizeBox > text {
+  margin-right: 30px;
+}
+
+.numBox {
+  background-color: white;
+  color: black;
+  height: 28px;
+  width: 32px;
+  font-size: 16px;
+  padding: 4px;
+  border: 1.2px solid black;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.buttonGroup > button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.shareBtn {
+  background-color: white;
+}
+
+.cartBtn {
+  background-color: rgb(25, 25, 25);
+  color: white;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .container {
+    flex-direction: column;
+  }
+  .previewMain {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container {
+    width: 100vw;
+  }
+  .previewRight {
+    flex-direction: column;
+  }
+  .previewRight,
+  .tweaks {
+    padding: 0;
+  }
+}
