@@ -35,12 +35,13 @@ const Filter = ({ allProducts, filteredProducts, setFilteredProducts }) => {
       </div>
       <div className={styles.filterContainer}>
         <text>Cost</text>
-        {filterData.priceFilters.map((filter) => (
+        {filterData.priceFilters.map((filter, index) => (
           <FilterSelector
             label={filter.label}
             value={filter.value}
             name="price"
             setFilter={setPriceFilter}
+            key={index}
           />
         ))}
       </div>
@@ -58,23 +59,25 @@ const Filter = ({ allProducts, filteredProducts, setFilteredProducts }) => {
       </div>
       <div className={styles.filterContainer}>
         <text>Design Templates</text>
-        {filterData.templateFilters.map((filter) => (
+        {filterData.templateFilters.map((filter, index) => (
           <FilterSelector
             label={filter.label}
             value={filter.value}
             name="template"
             setFilter={setTemplateFilter}
+            key={index}
           />
         ))}
       </div>
       <div className={styles.filterContainer}>
         <text>Type</text>
-        {filterData.typeFilters.map((filter) => (
+        {filterData.typeFilters.map((filter, index) => (
           <FilterSelector
             label={filter.label}
             value={filter.value}
             name="type"
             setFilter={setTypeFilter}
+            key={index}
           />
         ))}
       </div>

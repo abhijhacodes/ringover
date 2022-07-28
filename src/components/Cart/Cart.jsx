@@ -29,7 +29,7 @@ const Cart = ({ cartProducts, setCartProducts }) => {
           </div>
         ) : (
           <div>
-            <text>What's stopping you, designer ?</text>
+            <text>What&apos;s stopping you, designer ?</text>
           </div>
         )}
       </div>

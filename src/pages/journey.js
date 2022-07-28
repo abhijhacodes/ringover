@@ -2,7 +2,7 @@ import styles from "../../styles/Journey.module.css";
 import { useState, useEffect } from "react";
 import { timelineData } from "../../data/timeline";
 
-const journey = () => {
+export default function Journey() {
   const [timelineContent, setTimelineContent] = useState([]);
   useEffect(() => {
     setTimelineContent(timelineData);
@@ -28,6 +28,4 @@ const journey = () => {
       </div>
     </div>
   );
-};
-
-export default journey;
+}

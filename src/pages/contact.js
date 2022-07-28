@@ -21,7 +21,7 @@ const SocialLogo = ({ name }) => {
   );
 };
 
-const contact = () => {
+export default function Contact() {
   return (
     <>
       <div className={utilStyles.containerWithBg}>
@@ -51,6 +51,4 @@ const contact = () => {
       </div>
     </>
   );
-};
-
-export default contact;
+}

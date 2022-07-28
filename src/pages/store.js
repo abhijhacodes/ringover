@@ -7,7 +7,7 @@ import ProductPreview from "../components/ProductPreview/ProductPreview";
 import Products from "../components/Products/Products";
 import { loadProductsFromCart } from "../utils/cartHandlers";
 
-const store = () => {
+export default function Store() {
   const [productPreview, setProductPreview] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState({});
   const [cartProducts, setCartProducts] = useState([]);
@@ -53,6 +53,4 @@ const store = () => {
       </div>
     </div>
   );
-};
-
-export default store;
+}

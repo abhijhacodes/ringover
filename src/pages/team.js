@@ -2,7 +2,7 @@ import { teamMembers } from "../../data/team";
 import styles from "../../styles/Team.module.css";
 import UserCard from "../components/UserCard/UserCard";
 
-const team = () => {
+export default function Team() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -23,6 +23,4 @@ const team = () => {
       </div>
     </div>
   );
-};
-
-export default team;
+}
