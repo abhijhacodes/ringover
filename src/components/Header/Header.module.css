@@ -76,6 +76,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .navContainer {
+    height: 80px;
     background-color: white;
   }
   .navText {
